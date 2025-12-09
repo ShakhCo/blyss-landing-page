@@ -1,0 +1,12 @@
+# BLYSS - blyss.uz
+# Telegram Mini App for barbershop and beauty salon booking
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blyss.uz/sitemap.xml
+
+# Telegram bots
+# @blyssbot - For clients
+# @blyss_business_bot - For business owners

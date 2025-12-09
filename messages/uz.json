@@ -1,0 +1,313 @@
+{
+  "nav": {
+    "features": "Imkoniyatlar",
+    "howItWorks": "Qanday ishlaydi",
+    "pricing": "Narxlar",
+    "testimonials": "Fikrlar",
+    "faq": "Savollar",
+    "login": "Kirish",
+    "startFree": "Bepul boshlash"
+  },
+  "hero": {
+    "badge": "O'zbekistonda #1 bron qilish ilovasi",
+    "headline": "Salonlar va sartaroshxonalar uchun",
+    "headlineHighlight": "eng yaxshi bron ilovasi",
+    "subheadline": "Mijozlaringiz istalgan vaqtda bron qilsin. To'lovlarni qabul qiling. Biznesingizni kattalashtiring.",
+    "cta": "Bepul boshlash",
+    "watchDemo": "Video ko'rish",
+    "trialInfo": "14 kun bepul • Istalgan vaqtda bekor qilish mumkin",
+    "videoText": "BLYSS qanday ishlashini ko'ring",
+    "featuredIn": "OAV da",
+    "newBooking": "Yangi bron!",
+    "haircut": "Soch olish • 14:00",
+    "paymentReceived": "To'lov keldi"
+  },
+  "features": {
+    "label": "Imkoniyatlar",
+    "title": "Biznesingiz uchun hamma narsa bor",
+    "subtitle": "Salonlar, sartaroshxonalar va spa markazlari uchun barcha vositalar.",
+    "stayBooked": {
+      "tag": "Doim band bo'ling",
+      "headline": "Kalendaringiz doim to'liq bo'lsin",
+      "description": "Mijozlar sizga 24 soat, haftaning 7 kuni bron qila oladi. Eslatmalar avtomatik yuboriladi, shuning uchun mijozlar uchrashuvni unutmaydi.",
+      "benefit1": "24/7 onlayn bron",
+      "benefit2": "Avtomatik eslatmalar",
+      "benefit3": "Kalendar bilan bog'lanish",
+      "benefit4": "Navbat ro'yxati"
+    },
+    "growClientele": {
+      "tag": "Mijozlarni ko'paytiring",
+      "headline": "Yangi mijozlar toping",
+      "description": "Minglab odamlar BLYSS orqali xizmatlarni qidiradi. Sharhlar orqali obro'yingizni oshiring.",
+      "benefit1": "Ko'proq odamlar sizni topadi",
+      "benefit2": "Mijoz sharhlari",
+      "benefit3": "Ishlaringiz galereyasi",
+      "benefit4": "Instagram, Telegram bilan bog'lanish"
+    },
+    "trackSuccess": {
+      "tag": "Natijalarni ko'ring",
+      "headline": "Biznesingiz qanday ishlayotganini bilib turing",
+      "description": "Qancha pul ishladingiz, qaysi xizmatlar mashhur - hammasini ko'ring. Biznesingizni yaxshilash uchun maslahatlar oling.",
+      "benefit1": "Daromadni ko'rish",
+      "benefit2": "Hisobotlar",
+      "benefit3": "Mijozlar haqida ma'lumot",
+      "benefit4": "Foydali maslahatlar"
+    },
+    "more": "Yana ko'p imkoniyatlar...",
+    "smartNotifications": "Aqlli eslatmalar",
+    "smartNotificationsDesc": "Mijozlar uchrashuvni unutmaydi - eslatma boradi",
+    "mobileApp": "Telefon ilovasi",
+    "mobileAppDesc": "Telefoningizdan biznesingizni boshqaring",
+    "clientMessaging": "Mijozlar bilan yozishing",
+    "clientMessagingDesc": "Mijozlarga to'g'ridan-to'g'ri yozing",
+    "timeManagement": "Vaqtni boshqarish",
+    "timeManagementDesc": "Qachon ishlayman deb belgilang, qolgani avtomatik"
+  },
+  "whyBLYSS": {
+    "label": "Nega BLYSS?",
+    "title": "Salonlar va sartaroshxonalar uchun yaratilgan",
+    "subtitle": "Biz sizning ishingizni tushunamiz va yordam beramiz.",
+    "feature1": {
+      "title": "Siz uchun maxsus",
+      "description": "BLYSS maxsus salonlar, sartaroshxonalar va spa markazlari uchun yaratilgan."
+    },
+    "feature2": {
+      "title": "5 daqiqada tayyor",
+      "description": "Murakkab sozlash yo'q. Tez ro'yxatdan o'ting va bron qabul qilishni boshlang."
+    },
+    "feature3": {
+      "title": "Doim yordam beramiz",
+      "description": "Savolingiz bo'lsa - yozing. Jamoamiz har doim yordam berishga tayyor."
+    }
+  },
+  "howItWorks": {
+    "label": "Qanday ishlaydi",
+    "title": "3 oddiy qadamda boshlang",
+    "subtitle": "Bir necha daqiqada ro'yxatdan o'ting va bugundan bron qabul qilishni boshlang.",
+    "step1": {
+      "title": "Ro'yxatdan o'ting",
+      "description": "Telefon raqamingiz bilan ro'yxatdan o'ting."
+    },
+    "step2": {
+      "title": "Ma'lumotlaringizni kiriting",
+      "description": "Xizmatlaringiz, narxlaringiz va qachon ishlashingizni yozing. Rasmlar qo'shing."
+    },
+    "step3": {
+      "title": "Bron qabul qiling",
+      "description": "Havolangizni mijozlarga yuboring. Ular istalgan vaqtda bron qila oladi!"
+    },
+    "cta": "Bepul boshlash",
+    "ctaSubtext": "5 daqiqadan kam vaqt oladi"
+  },
+  "pricing": {
+    "label": "Narxlar",
+    "title": "Oddiy va tushunarli narxlar",
+    "subtitle": "Yashirin to'lovlar yo'q. O'zingizga mosini tanlang.",
+    "starter": {
+      "name": "Boshlang'ich",
+      "description": "Yangi boshlaganlar uchun",
+      "price": "Bepul",
+      "period": "",
+      "feature1": "Oyiga 25 ta bron",
+      "feature2": "Oddiy bron sahifasi",
+      "feature3": "Email eslatmalar",
+      "feature4": "Telefon ilovasi",
+      "feature5": "Yordam",
+      "cta": "Bepul boshlash"
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "Faol ishlaydigan ustalar uchun",
+      "price": "149,000",
+      "currency": "so'm",
+      "period": "/oy",
+      "popular": "Eng mashhur",
+      "feature1": "Cheksiz bronlar",
+      "feature2": "Chiroyli bron sahifasi",
+      "feature3": "SMS va Email eslatmalar",
+      "feature4": "Mijozlar bazasi",
+      "feature5": "Mijozlar ro'yxati",
+      "feature6": "Hisobotlar",
+      "feature7": "Tez yordam",
+      "feature8": "BLYSS logosi yo'q",
+      "cta": "Bepul sinab ko'rish"
+    },
+    "business": {
+      "name": "Biznes",
+      "description": "Salonlar va jamoalar uchun",
+      "price": "399,000",
+      "currency": "so'm",
+      "period": "/oy",
+      "feature1": "Professional rejadagi hamma narsa",
+      "feature2": "10 tagacha xodim",
+      "feature3": "Jamoa kalendari",
+      "feature4": "Batafsil hisobotlar",
+      "feature5": "API",
+      "feature6": "Maxsus sozlamalar",
+      "feature7": "Shaxsiy menejer",
+      "feature8": "O'z brendingiz",
+      "cta": "Bog'lanish"
+    },
+    "trial": "14 kun bepul",
+    "noCard": "Tez ro'yxatdan o'tish",
+    "cancelAnytime": "Istalgan vaqtda bekor qilish mumkin"
+  },
+  "testimonials": {
+    "label": "Fikrlar",
+    "title": "Ustalar nima deydi",
+    "subtitle": "BLYSS ishlatayotgan ustalarning fikrlari.",
+    "cta": "Bepul sinab ko'rish",
+    "ctaSubtext": "Minglab ustalarga qo'shiling"
+  },
+  "faq": {
+    "label": "Savollar",
+    "title": "Ko'p beriladigan savollar",
+    "subtitle": "BLYSS haqida savollaringiz bormi? Javoblar shu yerda.",
+    "q1": "Bepul sinov qanday ishlaydi?",
+    "a1": "14 kun davomida Professional rejani bepul ishlatib ko'ring. Keyin o'zingizga mos rejani tanlaysiz yoki bepul rejada davom etasiz.",
+    "q2": "Rejani o'zgartira olamanmi?",
+    "a2": "Ha! Istalgan vaqtda rejangizni o'zgartirishingiz mumkin.",
+    "q3": "Mijozlar qanday bron qiladi?",
+    "a3": "Sizga maxsus havola beriladi. Uni Instagram, Telegram yoki WhatsApp ga qo'yasiz. Mijozlar havolani bosib, xizmat va vaqtni tanlaydi.",
+    "q4": "Ilova yuklab olish kerakmi?",
+    "a4": "Mijozlaringiz hech narsa yuklamaydi - brauzerdan bron qiladi. Siz uchun esa iOS va Android ilovalarimiz bor.",
+    "q5": "Mijozlarim qanday to'laydi?",
+    "a5": "Mijozlar xizmat uchun naqd pul bilan to'laydi. BLYSS orqali faqat bron qilish bepul.",
+    "q6": "Bir nechta xodimni qo'sha olamanmi?",
+    "a6": "Ha! Biznes rejasida 10 tagacha xodim qo'shishingiz mumkin. Har birining o'z kalendari bo'ladi.",
+    "q7": "Bekor qilsam ma'lumotlarim-chi?",
+    "a7": "Ma'lumotlaringiz sizniki. Bekor qilishdan oldin hamma narsani yuklab olishingiz mumkin. 30 kun saqlab turamiz.",
+    "q8": "Qaysi tillarda ishlaydi?",
+    "a8": "O'zbek (lotin va kirill), rus va ingliz tillarida ishlaydi.",
+    "stillQuestions": "Yana savollaringiz bormi?",
+    "stillQuestionsDesc": "Yozing, yordam beramiz.",
+    "contactSupport": "Yozish"
+  },
+  "footer": {
+    "cta": {
+      "title": "Biznesingizni oshirishga tayyormisiz?",
+      "subtitle": "Minglab ustalar BLYSS bilan ishlaydi. Siz ham qo'shiling!",
+      "startTrial": "Bepul boshlash",
+      "contactSales": "Bog'lanish"
+    },
+    "description": "Salonlar va sartaroshxonalar uchun bron qilish ilovasi. Mijozlarni boshqaring, biznesingizni oshiring.",
+    "product": "Mahsulot",
+    "company": "Kompaniya",
+    "resources": "Yordam",
+    "legal": "Huquqiy",
+    "features": "Imkoniyatlar",
+    "pricing": "Narxlar",
+    "integrations": "Integratsiyalar",
+    "mobileApp": "Telefon ilovasi",
+    "api": "API",
+    "aboutUs": "Biz haqimizda",
+    "careers": "Ish o'rinlari",
+    "blog": "Blog",
+    "press": "Matbuot",
+    "partners": "Hamkorlar",
+    "helpCenter": "Yordam",
+    "community": "Jamiyat",
+    "tutorials": "Darslar",
+    "webinars": "Vebinarlar",
+    "status": "Holat",
+    "privacyPolicy": "Maxfiylik",
+    "termsOfService": "Foydalanish shartlari",
+    "cookiePolicy": "Cookie",
+    "gdpr": "GDPR",
+    "copyright": "© {year} BLYSS. Barcha huquqlar himoyalangan."
+  },
+  "demo1": {
+    "nav": {
+      "forBusiness": "Biznes uchun",
+      "features": "Imkoniyatlar",
+      "howItWorks": "Qanday ishlaydi",
+      "about": "Biz haqimizda",
+      "login": "Kirish",
+      "openTelegram": "Telegramda ochish"
+    },
+    "hero": {
+      "badge": "Telegram Mini App",
+      "headline": "Mukammal",
+      "headlineHighlight": "ko'rinishingizni band qiling.",
+      "subtitle": "Telegram orqali sartaroshxonaga bir zumda yoziling. Qo'ng'iroq yo'q, kutish yo'q - bosing va band qiling.",
+      "cta": "Telegramda ochish",
+      "watchVideo": "Qanday ishlashini ko'ring"
+    },
+    "howItWorks": {
+      "title": "Qanday ishlaydi",
+      "subtitle": "Keyingi soch olishni bir necha soniyada band qiling. Qo'ng'iroq yo'q, kutish yo'q - Telegramni oching va band qiling.",
+      "step1": {
+        "title": "Yaqinidagi toping",
+        "description": "Yaqin atrofdagi eng yaxshi sartaroshxona va salonlarni haqiqiy sharhlar va reytinglar bilan toping."
+      },
+      "step2": {
+        "title": "Vaqt tanlang",
+        "description": "O'zingizga qulay sana va vaqtni tanlang. Real vaqtda bo'sh joylarni ko'ring."
+      },
+      "step3": {
+        "title": "Soch oldiring",
+        "description": "Keling, mukammal soch turmagi oling va ilova orqali qulay to'lang."
+      }
+    },
+    "telegram": {
+      "title": "Telegramda",
+      "titleHighlight": "ochish",
+      "subtitle": "Ilova yuklab olish shart emas. BLYSS Telegram ichida ishlaydi - har kuni ishlatadigan ilovangiz. Bir joyda band qiling, tarixni ko'ring va eslatmalar oling.",
+      "cta": "Ochish",
+      "ctaHighlight": "Telegram",
+      "myBookings": "Bronlarim",
+      "upcoming": "Kelayotgan",
+      "classicHaircut": "Klassik soch olish",
+      "confirmed": "Tasdiqlangan",
+      "recentVisits": "So'nggi tashriflar",
+      "beardTrim": "Soqol olish",
+      "haircutStyling": "Soch olish + Styling",
+      "kidsHaircut": "Bolalar soch olish",
+      "bookingConfirmed": "Tasdiqlandi!"
+    },
+    "business": {
+      "title": "Sartaroshxona",
+      "titleLine2": "biznesingizni",
+      "titleLine3": "rivojlantiring.",
+      "subtitle": "Bronlarni boshqaring, kelmay qolishni kamaytiring va yangi mijozlarni jalb qiling. BLYSS sizga eng yaxshi ishingizga - soch olishga e'tibor qaratishga yordam beradi.",
+      "benefit1": "Avtomatik bron va eslatmalar",
+      "benefit2": "Real vaqtda jadval boshqaruvi",
+      "benefit3": "Mijozlar tahlili va statistika",
+      "cta": "Biznesingizni ro'yxatdan o'tkazing",
+      "todaySchedule": "Bugungi jadval",
+      "bookings": "Bronlar",
+      "available": "Bo'sh",
+      "revenue": "Daromad",
+      "upcoming": "Kelayotgan",
+      "haircutBeard": "Soch + Soqol",
+      "classicCut": "Klassik soch",
+      "inMinutes": "30 daqiqada",
+      "inHour": "1 soatda"
+    },
+    "newsletter": {
+      "title": "Erta kirish oling",
+      "subtitle": "BLYSS shahringizda ishga tushganda birinchilardan bo'lib biling",
+      "placeholder": "username",
+      "cta": "Xabar bering"
+    },
+    "footer": {
+      "description": "Telegram orqali sartaroshxonaga bir zumda yoziling. Mukammal ko'rinishga erishishning eng oson yo'li.",
+      "blyss": "BLYSS",
+      "about": "Biz haqimizda",
+      "terms": "Foydalanish shartlari",
+      "privacy": "Maxfiylik siyosati",
+      "howItWorks": "Qanday ishlaydi",
+      "contact": "Bog'lanish",
+      "forBusiness": "Biznes uchun",
+      "registerSalon": "Salonni ro'yxatdan o'tkazish",
+      "pricing": "Narxlar",
+      "features": "Imkoniyatlar",
+      "support": "Yordam",
+      "helpCenter": "Yordam markazi",
+      "telegramSupport": "Telegram yordam",
+      "faq": "Savollar",
+      "copyright": "© {year} BLYSS. Barcha huquqlar himoyalangan.",
+      "madeIn": "O'zbekistonda yaratilgan"
+    }
+  }
+}
