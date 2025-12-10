@@ -1,197 +1,160 @@
 "use client";
 
-import { motion } from "framer-motion";
-import {
-  Calendar,
-  Users,
-  BarChart3,
-  Bell,
-  Smartphone,
-  MessageSquare,
-  Clock,
-} from "lucide-react";
 import { useTranslations } from "next-intl";
-import { SplitText } from "./SplitText";
 
-const featureIcons = {
-  stayBooked: Calendar,
-  growClientele: Users,
-  trackSuccess: BarChart3,
-};
+const featureIcons = [
+  // Calendar icon - Online Booking 24/7
+  <svg
+    key="calendar"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+    />
+  </svg>,
+  // Team icon - Team Management
+  <svg
+    key="team"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+    />
+  </svg>,
+  // Analytics icon - Analytics & Reports
+  <svg
+    key="analytics"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+    />
+  </svg>,
+  // Bell icon - Smart Notifications
+  <svg
+    key="bell"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+    />
+  </svg>,
+  // Payment icon - Online Payments
+  <svg
+    key="payment"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+    />
+  </svg>,
+  // Heart icon - Loyalty Program
+  <svg
+    key="loyalty"
+    className="w-8 h-8"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+    />
+  </svg>,
+];
 
-const featureColors = {
-  stayBooked: {
-    bg: "bg-blue-500",
-    bgLight: "bg-gradient-to-br from-blue-100 to-blue-50",
-    text: "text-blue-500",
-    textDark: "text-blue-600",
-    badge: "#3b82f620",
-    iconColor: "text-blue-300",
-  },
-  growClientele: {
-    bg: "bg-purple-500",
-    bgLight: "bg-gradient-to-br from-purple-100 to-purple-50",
-    text: "text-purple-500",
-    textDark: "text-purple-600",
-    badge: "#a855f720",
-    iconColor: "text-purple-300",
-  },
-  trackSuccess: {
-    bg: "bg-orange-500",
-    bgLight: "bg-gradient-to-br from-orange-100 to-orange-50",
-    text: "text-orange-500",
-    textDark: "text-orange-600",
-    badge: "#f9731620",
-    iconColor: "text-orange-300",
-  },
-};
+export function Features() {
+  const t = useTranslations("Features");
 
-const quickFeatureIcons = [Bell, Smartphone, MessageSquare, Clock];
-
-export default function Features() {
-  const t = useTranslations("features");
-
-  const featureKeys = ["stayBooked", "growClientele", "trackSuccess"] as const;
-  const quickFeatureKeys = ["smartNotifications", "mobileApp", "clientMessaging", "timeManagement"];
+  const features = [
+    { icon: featureIcons[0], title: t("feature1.title"), description: t("feature1.description") },
+    { icon: featureIcons[1], title: t("feature2.title"), description: t("feature2.description") },
+    { icon: featureIcons[2], title: t("feature3.title"), description: t("feature3.description") },
+    { icon: featureIcons[3], title: t("feature4.title"), description: t("feature4.description") },
+    { icon: featureIcons[4], title: t("feature5.title"), description: t("feature5.description") },
+    { icon: featureIcons[5], title: t("feature6.title"), description: t("feature6.description") },
+  ];
 
   return (
-    <section id="features" className="section bg-white">
-      <div className="container-custom mx-auto">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-primary font-semibold text-sm uppercase tracking-wider inline-block"
+    <section className="py-16 sm:py-20 lg:py-28">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* Header */}
+        <div className="max-w-4xl mx-auto mb-12 lg:mb-16">
+
+          <h1
+            className="lg:text-center text-gray-900 font-bold text-4xl md:text-5xl xl:text-6xl leading-tight mb-10"
+            style={{ fontFamily: "Archivo, sans-serif" }}
           >
-            {t("label")}
-          </motion.span>
-          <SplitText
-            text={t("title")}
-            as="h2"
-            className="text-3xl md:text-4xl font-bold text-stone-900 mt-2 mb-4"
-          />
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto"
+            {t("title")}{" "}
+            <span className="text-[#f97316]">{t("titleHighlight")}</span>
+          </h1>
+
+          <p
+            className="lg:text-center text-[#8690ab] text-lg md:text-xl lg:text-2xl"
+            style={{ fontFamily: "Archivo, sans-serif" }}
           >
             {t("subtitle")}
-          </motion.p>
+          </p>
         </div>
 
-        {/* Main features with alternating layout */}
-        <div className="space-y-24 mb-24">
-          {featureKeys.map((key, index) => {
-            const Icon = featureIcons[key];
-            const colors = featureColors[key];
-            const reversed = index % 2 === 1;
-
-            return (
-              <motion.div
-                key={key}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 0.6 }}
-                className={`flex flex-col ${
-                  reversed ? "lg:flex-row-reverse" : "lg:flex-row"
-                } items-center gap-12 lg:gap-20`}
+        {/* Features Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-[15px] p-6 sm:p-8 border border-gray-200 hover:border-blue-600/30 hover:shadow-lg transition-all group"
+            >
+              <div className="w-14 h-14 bg-[#f97316]/10 rounded-[12px] flex items-center justify-center text-[#f97316] mb-5 group-hover:bg-[#f97316] group-hover:text-white transition-all">
+                {feature.icon}
+              </div>
+              <h3
+                className="font-bold text-xl sm:text-2xl text-gray-900 mb-3"
+                style={{ fontFamily: "Archivo, sans-serif" }}
               >
-                {/* Content */}
-                <div className="flex-1 max-w-xl">
-                  <div
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4"
-                    style={{ backgroundColor: colors.badge }}
-                  >
-                    <Icon size={18} className={colors.text} />
-                    <span className={`text-sm font-semibold ${colors.textDark}`}>
-                      {t(`${key}.tag`)}
-                    </span>
-                  </div>
-
-                  <SplitText
-                    text={t(`${key}.headline`)}
-                    as="h3"
-                    className="text-2xl md:text-3xl font-bold text-stone-900 mb-4"
-                  />
-
-                  <p className="text-stone-600 mb-6 leading-relaxed">
-                    {t(`${key}.description`)}
-                  </p>
-
-                  <ul className="space-y-3">
-                    {[1, 2, 3, 4].map((num) => (
-                      <li key={num} className="flex items-center gap-3">
-                        <div className="w-5 h-5 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                          <svg
-                            className="w-3 h-3 text-green-600"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={3}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                        </div>
-                        <span className="text-stone-700">
-                          {t(`${key}.benefit${num}`)}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Image placeholder */}
-                <div className="flex-1 w-full max-w-lg">
-                  <div
-                    className={`aspect-[4/3] rounded-3xl ${colors.bgLight} flex items-center justify-center shadow-lg`}
-                  >
-                    <Icon size={80} className={colors.iconColor} />
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+                {feature.title}
+              </h3>
+              <p
+                className="text-[#8690ab] text-base sm:text-lg leading-relaxed"
+                style={{ fontFamily: "Archivo, sans-serif" }}
+              >
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
-
-        {/* Quick features grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="bg-stone-50 rounded-3xl p-8 md:p-12"
-        >
-          <h3 className="text-2xl font-bold text-stone-900 text-center mb-8">
-            {t("more")}
-          </h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {quickFeatureKeys.map((key, index) => {
-              const Icon = quickFeatureIcons[index];
-              return (
-                <div
-                  key={key}
-                  className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                    <Icon size={24} className="text-primary" />
-                  </div>
-                  <h4 className="font-semibold text-stone-900 mb-2">
-                    {t(key)}
-                  </h4>
-                  <p className="text-sm text-stone-600">{t(`${key}Desc`)}</p>
-                </div>
-              );
-            })}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

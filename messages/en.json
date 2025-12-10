@@ -1,313 +1,86 @@
 {
-  "nav": {
-    "features": "Features",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing",
-    "testimonials": "Reviews",
-    "faq": "FAQ",
-    "login": "Log in",
-    "startFree": "Start Free"
-  },
-  "hero": {
-    "badge": "#1 Booking App in Uzbekistan",
-    "headline": "For salons and barbershops",
-    "headlineHighlight": "the best booking app",
-    "subheadline": "Clients book anytime. Accept payments. Grow your business.",
-    "cta": "Start Free",
-    "watchDemo": "Watch Video",
-    "trialInfo": "14 days free • No card needed • Cancel anytime",
-    "videoText": "See how BLYSS works",
-    "featuredIn": "As seen in",
-    "newBooking": "New Booking!",
-    "haircut": "Haircut • 2:00 PM",
-    "paymentReceived": "Payment Received"
-  },
-  "features": {
-    "label": "Features",
-    "title": "Everything for your business",
-    "subtitle": "All the tools for salons, barbershops, and spa centers.",
-    "stayBooked": {
-      "tag": "Stay Booked",
-      "headline": "Keep your calendar full",
-      "description": "Clients book with you 24/7. Reminders are sent automatically - clients won't forget their appointment.",
-      "benefit1": "24/7 online booking",
-      "benefit2": "Automatic reminders",
-      "benefit3": "Calendar sync",
-      "benefit4": "Waitlist"
-    },
-    "growClientele": {
-      "tag": "More Clients",
-      "headline": "Find new clients",
-      "description": "Thousands of people search for services on BLYSS. Build your reputation with reviews.",
-      "benefit1": "More people find you",
-      "benefit2": "Client reviews",
-      "benefit3": "Work gallery",
-      "benefit4": "Instagram, Telegram link"
-    },
-    "trackSuccess": {
-      "tag": "See Results",
-      "headline": "Know how your business is doing",
-      "description": "See how much you earned, which services are popular. Get tips to improve.",
-      "benefit1": "Track income",
-      "benefit2": "Reports",
-      "benefit3": "Client info",
-      "benefit4": "Helpful tips"
-    },
-    "more": "And much more...",
-    "smartNotifications": "Smart Reminders",
-    "smartNotificationsDesc": "Clients won't forget - they get reminders",
-    "mobileApp": "Mobile App",
-    "mobileAppDesc": "Manage your business from your phone",
-    "clientMessaging": "Message Clients",
-    "clientMessagingDesc": "Write to clients directly",
-    "timeManagement": "Time Management",
-    "timeManagementDesc": "Set when you work, the rest is automatic"
-  },
-  "whyBLYSS": {
-    "label": "Why BLYSS?",
-    "title": "Built for salons and barbershops",
-    "subtitle": "We understand your work and help you succeed.",
+  "Features": {
+    "title": "Everything you need to grow your",
+    "titleHighlight": "business",
+    "subtitle": "We combine all the tools your business needs — in one convenient service",
     "feature1": {
-      "title": "Made for you",
-      "description": "BLYSS is built specifically for salons, barbershops, and spa centers."
+      "title": "24/7 Online Booking",
+      "description": "Clients book appointments themselves through BLYSS — anytime day or night. No calls or messages needed."
     },
     "feature2": {
-      "title": "Ready in 5 minutes",
-      "description": "No complex setup. Sign up quickly and start taking bookings."
+      "title": "Team Management",
+      "description": "Add specialists, configure their schedules, and track each employee's performance."
     },
     "feature3": {
-      "title": "Always here to help",
-      "description": "Have a question? Write to us. Our team is always ready to help."
+      "title": "Analytics & Reports",
+      "description": "Detailed statistics on bookings, revenue, and popular services. Make data-driven decisions."
+    },
+    "feature4": {
+      "title": "Smart Notifications",
+      "description": "Automatic client reminders via SMS and Telegram. Fewer missed appointments."
+    },
+    "feature5": {
+      "title": "Online Payments",
+      "description": "Accept payments via UZCARD, HUMO, Visa, and Mastercard directly through the app."
+    },
+    "feature6": {
+      "title": "Loyalty Program",
+      "description": "Create promo codes and bonus programs for regular clients. Increase customer retention."
     }
   },
-  "howItWorks": {
-    "label": "How It Works",
-    "title": "Start in 3 simple steps",
-    "subtitle": "Sign up in a few minutes. Start taking bookings today.",
-    "step1": {
-      "title": "Sign up",
-      "description": "Register with your phone number. No card needed."
-    },
-    "step2": {
-      "title": "Fill your profile",
-      "description": "Add your services, prices and when you work. Add photos."
-    },
-    "step3": {
-      "title": "Accept bookings",
-      "description": "Send your link to clients. They can book anytime!"
-    },
-    "cta": "Start Free",
-    "ctaSubtext": "Takes less than 5 minutes"
-  },
-  "pricing": {
-    "label": "Pricing",
-    "title": "Simple, clear pricing",
-    "subtitle": "No hidden fees. Pick what works for you.",
-    "starter": {
-      "name": "Starter",
-      "description": "For beginners",
-      "price": "Free",
-      "period": "",
-      "feature1": "25 bookings/month",
-      "feature2": "Simple booking page",
-      "feature3": "Email reminders",
-      "feature4": "Mobile app",
-      "feature5": "Support",
-      "cta": "Start Free"
-    },
-    "professional": {
-      "name": "Professional",
-      "description": "For active pros",
-      "price": "$29",
-      "currency": "",
-      "period": "/month",
-      "popular": "Most Popular",
-      "feature1": "Unlimited bookings",
-      "feature2": "Beautiful booking page",
-      "feature3": "SMS & Email reminders",
-      "feature4": "Client database",
-      "feature5": "Client list",
-      "feature6": "Reports",
-      "feature7": "Fast support",
-      "feature8": "No BLYSS logo",
-      "cta": "Try Free"
-    },
-    "business": {
-      "name": "Business",
-      "description": "For salons and teams",
-      "price": "$79",
-      "currency": "",
-      "period": "/month",
-      "feature1": "Everything in Professional",
-      "feature2": "Up to 10 staff",
-      "feature3": "Team calendar",
-      "feature4": "Detailed reports",
-      "feature5": "API",
-      "feature6": "Custom settings",
-      "feature7": "Personal manager",
-      "feature8": "Your own brand",
-      "cta": "Contact Us"
-    },
-    "trial": "14 days free",
-    "noCard": "No card needed",
-    "cancelAnytime": "Cancel anytime"
-  },
-  "testimonials": {
-    "label": "Reviews",
-    "title": "What pros say",
-    "subtitle": "Reviews from pros using BLYSS.",
-    "cta": "Try Free",
-    "ctaSubtext": "Join thousands of pros"
-  },
-  "faq": {
-    "label": "FAQ",
-    "title": "Common questions",
-    "subtitle": "Questions about BLYSS? Answers are here.",
-    "q1": "How does the free trial work?",
-    "a1": "Use Professional plan free for 14 days. No card needed. Then pick a plan or stay on free.",
-    "q2": "Can I change plans?",
-    "a2": "Yes! Change your plan anytime.",
-    "q3": "How do clients book?",
-    "a3": "You get a special link. Put it on Instagram, Telegram or WhatsApp. Clients click and pick a service and time.",
-    "q4": "Do clients need to download an app?",
-    "a4": "No - clients book through the browser. You can use our iOS and Android apps.",
-    "q5": "How do clients pay?",
-    "a5": "Clients pay cash for services. Booking through BLYSS is free.",
-    "q6": "Can I add multiple staff?",
-    "a6": "Yes! Business plan has up to 10 staff. Each gets their own calendar.",
-    "q7": "What happens to my data if I cancel?",
-    "a7": "Your data is yours. Download everything before canceling. We keep it 30 days.",
-    "q8": "What languages are supported?",
-    "a8": "Uzbek (Latin and Cyrillic), Russian and English.",
-    "stillQuestions": "Still have questions?",
-    "stillQuestionsDesc": "Write to us, we'll help.",
-    "contactSupport": "Write to us"
-  },
-  "footer": {
-    "cta": {
-      "title": "Ready to grow your business?",
-      "subtitle": "Thousands of pros use BLYSS. Join them!",
-      "startTrial": "Start Free",
-      "contactSales": "Contact Us"
-    },
-    "description": "Booking app for salons and barbershops. Manage clients, grow your business.",
-    "product": "Product",
-    "company": "Company",
-    "resources": "Help",
-    "legal": "Legal",
-    "features": "Features",
-    "pricing": "Pricing",
-    "integrations": "Integrations",
-    "mobileApp": "Mobile App",
-    "api": "API",
-    "aboutUs": "About Us",
-    "careers": "Jobs",
-    "blog": "Blog",
-    "press": "Press",
-    "partners": "Partners",
-    "helpCenter": "Help",
-    "community": "Community",
-    "tutorials": "Tutorials",
-    "webinars": "Webinars",
-    "status": "Status",
-    "privacyPolicy": "Privacy",
-    "termsOfService": "Terms",
-    "cookiePolicy": "Cookies",
-    "gdpr": "GDPR",
-    "copyright": "© {year} BLYSS. All rights reserved."
-  },
-  "demo1": {
-    "nav": {
-      "forBusiness": "For Business",
-      "features": "Features",
-      "howItWorks": "How it Works",
-      "about": "About",
-      "login": "Log in",
-      "openTelegram": "Open in Telegram"
-    },
-    "hero": {
-      "badge": "Telegram Mini App",
-      "headline": "Book Your",
-      "headlineHighlight": "Perfect Look.",
-      "subtitle": "Book barbershop appointments instantly through Telegram. No calls, no waiting - just tap and you're booked.",
-      "cta": "Open in Telegram",
-      "watchVideo": "Watch how it works"
-    },
-    "howItWorks": {
-      "title": "How it works",
-      "subtitle": "Book your next haircut in seconds. No phone calls, no waiting - just open Telegram and book.",
-      "step1": {
-        "title": "Find Nearby",
-        "description": "Discover the best barbershops and salons near you with real reviews and ratings."
+  "Pricing": {
+    "title": "Choose the right",
+    "titleHighlight": "plan",
+    "titleEnd": "to grow your business",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "perMonth": "/month",
+    "monthlySubscription": "Monthly Subscription",
+    "annualSubscription": "Annual Subscription",
+    "select": "Select",
+    "getPriceEstimate": "Get Price Estimate",
+    "save": "Save",
+    "plans": {
+      "start": {
+        "title": "Start",
+        "subtitle": "For small salons & solo barbers",
+        "features": {
+          "f1": "Service & Price List Management",
+          "f2": "Basic Calendar & Schedule",
+          "f3": "Up to 10 Services",
+          "f4": "Up to 300 Bookings / month",
+          "f5": "Unlimited Client Profiles",
+          "f6": "Up to 2 Staff Accounts"
+        }
       },
-      "step2": {
-        "title": "Pick a Time",
-        "description": "Choose your preferred date and time slot. See real-time availability instantly."
+      "comfort": {
+        "title": "Comfort",
+        "subtitle": "For growing salons with a team",
+        "features": {
+          "f1": "Everything in Start",
+          "f2": "+ Advanced Calendar with Staff View",
+          "f3": "+ Up to 30 Services",
+          "f4": "+ Up to 1,000 Bookings / month",
+          "f5": "+ Up to 10 Staff Accounts",
+          "f6": "+ Client Loyalty & Promo Codes",
+          "f7": "+ Sales & Booking Analytics"
+        }
       },
-      "step3": {
-        "title": "Get Styled",
-        "description": "Show up, get your perfect haircut, and pay seamlessly through the app."
+      "pro": {
+        "title": "Pro",
+        "subtitle": "For large salons & beauty centers",
+        "features": {
+          "f1": "Everything in Comfort",
+          "f2": "+ Unlimited Services",
+          "f3": "+ Unlimited Bookings",
+          "f4": "+ Unlimited Staff Accounts",
+          "f5": "+ Multiple Branches (Up to 5)",
+          "f6": "+ Employee Performance Reports",
+          "f7": "+ Custom Branding (Logo, Colors, Banners)",
+          "f8": "+ Advanced Analytics Dashboard",
+          "f9": "+ Priority Support"
+        }
       }
-    },
-    "telegram": {
-      "title": "Open in",
-      "titleHighlight": "Telegram",
-      "subtitle": "No app downloads needed. BLYSS works right inside Telegram - the app you already use every day. Book appointments, track history, and get reminders all in one place.",
-      "cta": "Open in",
-      "ctaHighlight": "Telegram",
-      "myBookings": "My Bookings",
-      "upcoming": "Upcoming",
-      "classicHaircut": "Classic Haircut",
-      "confirmed": "Confirmed",
-      "recentVisits": "Recent Visits",
-      "beardTrim": "Beard Trim",
-      "haircutStyling": "Haircut + Styling",
-      "kidsHaircut": "Kids Haircut",
-      "bookingConfirmed": "Confirmed!"
-    },
-    "business": {
-      "title": "Grow your",
-      "titleLine2": "barbershop",
-      "titleLine3": "business.",
-      "subtitle": "Manage appointments, reduce no-shows, and attract new customers. BLYSS helps you focus on what you do best - cutting hair.",
-      "benefit1": "Automated booking & reminders",
-      "benefit2": "Real-time schedule management",
-      "benefit3": "Customer analytics & insights",
-      "cta": "Register Your Business",
-      "todaySchedule": "Today's Schedule",
-      "bookings": "Bookings",
-      "available": "Available",
-      "revenue": "Revenue",
-      "upcoming": "Upcoming",
-      "haircutBeard": "Haircut + Beard",
-      "classicCut": "Classic Cut",
-      "inMinutes": "In 30 min",
-      "inHour": "In 1 hr"
-    },
-    "newsletter": {
-      "title": "Get Early Access",
-      "subtitle": "Be the first to know when BLYSS launches in your city",
-      "placeholder": "username",
-      "cta": "Notify Me"
-    },
-    "footer": {
-      "description": "Book barbershop appointments instantly through Telegram. The easiest way to get your perfect look.",
-      "blyss": "BLYSS",
-      "about": "About",
-      "terms": "Terms of Use",
-      "privacy": "Privacy Policy",
-      "howItWorks": "How it Works",
-      "contact": "Contact Us",
-      "forBusiness": "For Business",
-      "registerSalon": "Register Salon",
-      "pricing": "Pricing",
-      "features": "Features",
-      "support": "Support",
-      "helpCenter": "Help Center",
-      "telegramSupport": "Telegram Support",
-      "faq": "FAQ",
-      "copyright": "Copyright © {year} BLYSS. All rights reserved.",
-      "madeIn": "Made with love in Uzbekistan"
     }
   }
 }

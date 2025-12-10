@@ -1,110 +1,94 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { UserPlus, Settings, Rocket } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { SplitText } from "./SplitText";
-
-const stepIcons = [UserPlus, Settings, Rocket];
-const stepColors = [
-  "from-blue-500 to-cyan-500",
-  "from-purple-500 to-pink-500",
-  "from-orange-500 to-red-500",
+const steps = [
+  {
+    number: "01",
+    title: "Зарегистрируйтесь",
+    description:
+      "Откройте BLYSS Business в Telegram, заполните данные о салоне и добавьте свои услуги. Занимает 5 минут.",
+  },
+  {
+    number: "02",
+    title: "Настройте расписание",
+    description:
+      "Добавьте мастеров, укажите их график работы и специализации. Всё синхронизируется автоматически.",
+  },
+  {
+    number: "03",
+    title: "Принимайте записи",
+    description:
+      "Клиенты находят вас в BLYSS и записываются онлайн. Вы получаете уведомления и управляете записями.",
+  },
+  {
+    number: "04",
+    title: "Развивайте бизнес",
+    description:
+      "Анализируйте статистику, привлекайте новых клиентов и увеличивайте доход с помощью наших инструментов.",
+  },
 ];
 
-export default function HowItWorks() {
-  const t = useTranslations("howItWorks");
-
-  const steps = ["step1", "step2", "step3"];
-
+export function HowItWorks() {
   return (
-    <section id="how-it-works" className="section bg-stone-50">
-      <div className="container-custom mx-auto px-4">
-        {/* Section header */}
-        <div className="text-center mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-primary font-semibold text-sm uppercase tracking-wider inline-block"
-          >
-            {t("label")}
-          </motion.span>
-          <SplitText
-            text={t("title")}
-            as="h2"
-            className="text-3xl md:text-4xl font-bold text-stone-900 mt-2 mb-4"
-          />
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-base md:text-lg text-stone-600 max-w-2xl mx-auto"
-          >
-            {t("subtitle")}
-          </motion.p>
-        </div>
-
-        {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-8 relative">
-          {/* Connection line */}
-          <div className="hidden md:block absolute top-24 left-1/6 right-1/6 h-0.5 bg-gradient-to-r from-blue-200 via-purple-200 to-orange-200" />
-
-          {steps.map((step, index) => {
-            const Icon = stepIcons[index];
-            const color = stepColors[index];
-            const number = String(index + 1).padStart(2, "0");
-
-            return (
-              <motion.div
-                key={step}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
-                className="relative"
-              >
-                <div className="bg-white rounded-3xl p-8 shadow-sm hover:shadow-lg transition-shadow h-full overflow-hidden">
-                  {/* Step number with icon */}
-                  <div className="relative mb-6">
-                    <div
-                      className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${color} flex items-center justify-center mb-4 shadow-lg relative z-10`}
-                    >
-                      <Icon size={28} className="text-white" />
-                    </div>
-                    <span className="absolute top-0 left-0 text-6xl font-bold text-stone-100 -z-0 select-none">
-                      {number}
-                    </span>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-stone-900 mb-3">
-                    {t(`${step}.title`)}
-                  </h3>
-                  <p className="text-stone-600 leading-relaxed">
-                    {t(`${step}.description`)}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
+    <section className="py-16 sm:py-20 lg:py-28 max-w-7xl mx-auto px-4">
+      {/* Header */}
+      <div className="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+        <h2
+          className="font-bold text-[28px] sm:text-[36px] md:text-[44px] lg:text-[52px] leading-tight mb-4"
+          style={{ fontFamily: "Archivo, sans-serif" }}
         >
-          <a
-            href="#pricing"
-            className="btn-primary inline-flex items-center gap-2"
-          >
-            {t("cta")}
-            <Rocket size={18} />
-          </a>
-          <p className="text-sm text-stone-500 mt-4">{t("ctaSubtext")}</p>
-        </motion.div>
+          Как это <span className="text-[#162b60]">работает</span>
+        </h2>
+        <p
+          className="text-[#8690ab] text-[16px] sm:text-[18px] md:text-[20px]"
+          style={{ fontFamily: "Archivo, sans-serif" }}
+        >
+          Начните принимать онлайн-записи за 4 простых шага
+        </p>
+      </div>
+
+      {/* Steps */}
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        {steps.map((step, index) => (
+          <div key={index} className="relative">
+            {/* Connector line for desktop */}
+            {index < steps.length - 1 && (
+              <div className="hidden lg:block absolute top-8 left-[calc(50%+40px)] w-[calc(100%-40px)] h-[2px] bg-gradient-to-r from-[#162b60] to-[#162b60]/20"></div>
+            )}
+
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-[#162b60] text-white rounded-full mb-5">
+                <span
+                  className="font-bold text-[20px]"
+                  style={{ fontFamily: "Archivo, sans-serif" }}
+                >
+                  {step.number}
+                </span>
+              </div>
+
+              <h3
+                className="font-bold text-[20px] sm:text-[22px] text-[#162b60] mb-3"
+                style={{ fontFamily: "Archivo, sans-serif" }}
+              >
+                {step.title}
+              </h3>
+
+              <p
+                className="text-[#8690ab] text-[15px] sm:text-[16px] leading-relaxed"
+                style={{ fontFamily: "Archivo, sans-serif" }}
+              >
+                {step.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <div className="text-center mt-12 lg:mt-16">
+        <button
+          className="cursor-pointer bg-[#162b60] text-white px-10 py-4 rounded-[15px] text-[16px] sm:text-[18px] font-medium hover:bg-[#1a3470] transition-all"
+          style={{ fontFamily: "Archivo, sans-serif" }}
+        >
+          Начать бесплатно
+        </button>
       </div>
     </section>
   );

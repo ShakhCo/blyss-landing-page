@@ -1,155 +1,30 @@
 @import "tailwindcss";
 
-@theme {
-  /* Blyss Design System Colors */
-  --color-primary: #f97316;
-  --color-primary-dark: #fb923c;
-  --color-primary-foreground: #ffffff;
-
-  /* Logo Gradient Colors */
-  --color-logo-cyan: #00ddff;
-  --color-logo-magenta: #ff00d4;
-
-  /* Semantic Colors */
-  --color-success: #22c55e;
-  --color-star: #eab308;
-  --color-favorite: #ed4c5c;
-  --color-destructive: #ef4444;
-
-  /* Stone Palette for Neutrals */
-  --color-stone-50: #fafaf9;
-  --color-stone-100: #f5f5f4;
-  --color-stone-200: #e7e5e4;
-  --color-stone-300: #d6d3d1;
-  --color-stone-400: #a8a29e;
-  --color-stone-500: #78716c;
-  --color-stone-600: #57534e;
-  --color-stone-700: #44403c;
-  --color-stone-800: #292524;
-  --color-stone-900: #1c1917;
-  --color-stone-950: #0c0a09;
-
-  /* Border Radius */
-  --radius: 0.625rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.5rem;
-  --radius-3xl: 1.75rem;
-
-  /* Font */
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-}
-
-/* Custom utility classes */
-@layer base {
-  * {
-    @apply border-stone-200;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 100px;
-  }
-
-  body {
-    @apply bg-white text-stone-900 antialiased;
-    font-family: var(--font-sans);
-  }
-
-  .dark body {
-    @apply bg-stone-950 text-stone-100;
-  }
-}
-
-@layer utilities {
-  /* Logo Gradient */
-  .logo-gradient {
-    background: linear-gradient(90deg, var(--color-logo-cyan) 0%, var(--color-logo-magenta) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Primary Gradient Button */
-  .btn-primary {
-    @apply bg-primary text-white font-semibold px-4 py-2.5 text-sm rounded-xl;
-    @apply md:px-6 md:py-3 md:text-base md:rounded-2xl;
-    @apply transition-all duration-300 ease-out;
-    @apply hover:shadow-lg hover:shadow-primary/30;
-    @apply active:scale-95;
-  }
-
-  /* Card Styles */
-  .card {
-    @apply bg-white rounded-xl p-4;
-    @apply shadow-lg shadow-stone-200/50;
-  }
-
-  .dark .card {
-    @apply bg-stone-800 shadow-stone-950/50;
-  }
-
-  /* Glassmorphism */
-  .glass {
-    @apply bg-white/80 backdrop-blur-lg;
-  }
-
-  .dark .glass {
-    @apply bg-stone-900/80;
-  }
-
-  /* Section spacing */
-  .section {
-    @apply py-16 md:py-24 px-4;
-  }
-
-  /* Container */
-  .container-custom {
-    @apply max-w-6xl mx-auto;
-  }
-
-  /* Text gradient */
-  .text-gradient {
-    background: linear-gradient(135deg, var(--color-logo-cyan) 0%, var(--color-logo-magenta) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Orange gradient */
-  .text-gradient-orange {
-    background: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  /* Hide scrollbar */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-
-/* Animation keyframes */
+/* Custom floating animations */
 @keyframes float {
   0%, 100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(-6deg);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) rotate(-6deg);
   }
 }
 
-@keyframes pulse-glow {
+@keyframes float-delayed {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+    transform: translateY(0px) rotate(6deg);
   }
   50% {
-    box-shadow: 0 0 40px rgba(249, 115, 22, 0.5);
+    transform: translateY(-12px) rotate(6deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
   }
 }
 
@@ -157,17 +32,12 @@
   animation: float 3s ease-in-out infinite;
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+.animate-float-delayed {
+  animation: float-delayed 3.5s ease-in-out infinite;
+  animation-delay: 0.5s;
 }
 
-/* SplitText Animation */
-.split-text-char {
-  --progress: 0;
-  --rotate-dir: 1;
-  opacity: calc(0.2 + 0.8 * var(--progress));
-  transform:
-    translateY(calc((1 - var(--progress)) * 20px))
-    rotateX(calc((1 - var(--progress)) * var(--rotate-dir) * 25deg));
-  filter: blur(calc((1 - var(--progress)) * 2px));
+.animate-float-slow {
+  animation: float-slow 4s ease-in-out infinite;
+  animation-delay: 1s;
 }
