@@ -87,7 +87,7 @@ export function PricingTable() {
     <section className="py-20 lg:py-32 px-4 bg-[#3ed37a]/4">
       <div className="max-w-7xl mx-auto">
         
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <h1
             className="lg:text-center font-bold text-4xl md:text-5xl xl:text-6xl leading-tight mb-10 text-gray-900"
             style={{ fontFamily: "Archivo, sans-serif" }}
@@ -99,7 +99,7 @@ export function PricingTable() {
 
         {/* Billing Toggle */}
         <div className="flex justify-center mb-12 lg:mb-16">
-          <div className="w-full sm:w-auto flex items-center bg-[#3ed37a]/3 rounded-full p-1.5 sm:p-2">
+          <div className="w-full sm:w-auto flex items-center bg-gray-100 rounded-full p-1.5 sm:p-2">
             <button
               onClick={() => setBillingCycle("monthly")}
               className={`cursor-pointer flex-1 sm:flex-none sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-full text-[15px] sm:text-[18px] md:text-[20px] font-bold transition-all ${billingCycle === "monthly"
